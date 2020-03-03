@@ -98,3 +98,53 @@
 1583177071 source:z:\software development\xfp02032020\src\playlist.cpp
 	"Playlist.h"
 
+1583245412 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\artist.cpp
+	"Artist.h"
+
+1583245404 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\artist.h
+	"User.h"
+	"Song.h"
+	"Playlist.h"
+
+1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\user.h
+	<string>
+	<iostream>
+
+1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\song.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1583176952 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\playlist.h
+	"Song.h"
+	<iostream>
+	<vector>
+	<string>
+
+1583176060 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\listener.cpp
+	"Listener.h"
+
+1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\listener.h
+	"User.h"
+
+1583177071 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\playlist.cpp
+	"Playlist.h"
+
+1583176060 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\song.cpp
+	"Song.h"
+
+1583245338 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\user.cpp
+	"User.h"
+
+1583250711 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\main.cpp
+	<iostream>
+	<string>
+	"User.h"
+	"Playlist.h"
+	"Artist.h"
+	"Listener.h"
+	"Song.h"
+
