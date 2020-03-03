@@ -55,6 +55,9 @@ int main()
 
     Playlist p1;
 
+    int PPsize = 10;
+    int smallPP [PPsize] = {0,5,3,1,3,4,2,1,4,2};
+
     //p1.addSong(songVector.at(0));
     //p1.addSong(s1);
 
@@ -63,5 +66,25 @@ int main()
     a1.displayArtist();
 
     p1.displayPlaylist();
+
+    for (int i=0;i<PPsize;i++)
+    {
+        cout << smallPP[i] << ",";
+    }
+    cout << endl;
+
+    expandArray(smallPP,10,12);
+
+    smallPP[11] = 4;
+    PPsize = 12;
+
+    for (int i=0;i<PPsize;i++)
+    {
+        cout << smallPP[i] << ",";
+    }
+    cout << endl;
+
+
+
     return 0;
 }

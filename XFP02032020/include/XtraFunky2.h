@@ -41,12 +41,31 @@ __/\\\_______/\\\_____________________________________________/\\\\\\\\\\\\\\\__
 using namespace std;
 
 ///---------------------------------[ CUSTOM FUNCTIONS ]-----------------------------------
-
+int expandArray(int* Array,int CurrentArraySize,int NewArraySize);
 
 ///--------------------------------[ ALL THE BORING STUFF ]--------------------------------
-int* expandArray(int* arPtr,int newSize)
-{
 
+int expandArray(int* arPtr,int oldSize,int newSize)
+{
+    int lim = oldSize;
+
+    if (newSize < lim)
+    {
+        lim = newSize;
+    }
+
+    int* temPtr = arPtr;
+    arPtr = new int [newSize];
+
+    for (int i =0;i<lim;i++)
+    {
+        arPtr[i] = temPtr[i];
+    }
+
+    delete [] temPtr;
+    temPtr = nullptr;
+
+    return newSize;
 }
 
 
