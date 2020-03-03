@@ -39,6 +39,9 @@
 		<Unit filename="include/Playlist.h" />
 		<Unit filename="include/Song.h" />
 		<Unit filename="include/User.h" />
+		<Unit filename="include/XtraFunky2.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Artist.cpp" />
 		<Unit filename="src/Listener.cpp" />
