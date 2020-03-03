@@ -1,0 +1,100 @@
+# depslib dependency file v1.0
+1582747904 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\main.cpp
+	<iostream>
+	<string>
+	"User.h"
+	"Playlist.h"
+	"Artist.h"
+	"Listener.h"
+	"Song.h"
+
+1582745402 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\src\playlist.cpp
+	"Playlist.h"
+
+1582745402 z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\include\playlist.h
+	"Song.h"
+	<iostream>
+	<vector>
+	<string>
+
+1582744846 z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\include\user.h
+	<string>
+	<iostream>
+
+1582744790 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\src\user.cpp
+	"User.h"
+
+1582747740 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\src\artist.cpp
+	"Artist.h"
+
+1582747725 z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\include\artist.h
+	"User.h"
+	"Song.h"
+
+1582645644 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\src\listener.cpp
+	"Listener.h"
+
+1582645910 z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\include\listener.h
+	"User.h"
+
+1582748154 z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\include\song.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1582747950 source:z:\documents\dt021a_yr2_2\software development\projojo_2000\xtrafunkyphi\src\song.cpp
+	"Song.h"
+
+1583176060 source:z:\software development\xfp02032020\src\song.cpp
+	"Song.h"
+
+1583176059 z:\software development\xfp02032020\include\song.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1583245338 source:z:\software development\xfp02032020\src\user.cpp
+	"User.h"
+
+1583176059 z:\software development\xfp02032020\include\user.h
+	<string>
+	<iostream>
+
+1583177264 source:z:\software development\xfp02032020\main.cpp
+	<iostream>
+	<string>
+	"User.h"
+	"Playlist.h"
+	"Artist.h"
+	"Listener.h"
+	"Song.h"
+
+1583176952 z:\software development\xfp02032020\include\playlist.h
+	"Song.h"
+	<iostream>
+	<vector>
+	<string>
+
+1583245404 z:\software development\xfp02032020\include\artist.h
+	"User.h"
+	"Song.h"
+	"Playlist.h"
+
+1583176059 z:\software development\xfp02032020\include\listener.h
+	"User.h"
+
+1583245412 source:z:\software development\xfp02032020\src\artist.cpp
+	"Artist.h"
+
+1583176060 source:z:\software development\xfp02032020\src\listener.cpp
+	"Listener.h"
+
+1583177071 source:z:\software development\xfp02032020\src\playlist.cpp
+	"Playlist.h"
+
