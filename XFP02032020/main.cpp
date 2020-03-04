@@ -73,15 +73,33 @@ int main()
     }
     cout << endl;
 
-    expandArray(smallPP,10,12);
 
-    smallPP[11] = 4;
-    PPsize = 12;
+    cout << "Array size = " << PPsize << endl;
+    for (int i=0;i<PPsize;i++)
+    {
+        cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
+    }
+    cout << "-----------------------------------------------------\n";
+    PPsize = expandArray(smallPP,10,12);
+
+    int bgPP [PPsize];
+    cout << "BGPP ADDRESS: " << &bgPP << endl;
 
     for (int i=0;i<PPsize;i++)
     {
-        cout << smallPP[i] << ",";
+        cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
     }
+
+    cout << "-----------------------------------------------------\n";
+    PPsize = expandArray(smallPP,12,100);
+    for (int i=0;i<PPsize;i++)
+    {
+        smallPP[i] = i;
+        cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
+    }
+
+
+    cout << endl << "New array size = " << PPsize << endl;
     cout << endl;
 
 

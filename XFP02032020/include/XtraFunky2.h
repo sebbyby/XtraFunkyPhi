@@ -54,7 +54,12 @@ int expandArray(int* arPtr,int oldSize,int newSize)
         lim = newSize;
     }
 
-    int* temPtr = arPtr;
+    int* temPtr = new int [oldSize];
+    for (int i =0;i<oldSize;i++)
+    {
+        temPtr[i] = arPtr[i];
+    }
+
     arPtr = new int [newSize];
 
     for (int i =0;i<lim;i++)
@@ -62,7 +67,7 @@ int expandArray(int* arPtr,int oldSize,int newSize)
         arPtr[i] = temPtr[i];
     }
 
-    delete [] temPtr;
+    delete[] temPtr;
     temPtr = nullptr;
 
     return newSize;
