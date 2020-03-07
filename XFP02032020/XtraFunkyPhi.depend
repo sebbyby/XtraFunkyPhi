@@ -157,3 +157,62 @@
 	"Playlist.h"
 	"Artist.h"
 
+1583503337 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\src\artist.cpp
+	"Artist.h"
+
+1583503337 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\artist.h
+	"User.h"
+	"Song.h"
+	"Playlist.h"
+
+1583503337 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\user.h
+	<string>
+	<iostream>
+
+1583503337 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\song.h
+	<vector>
+	<string>
+	<stdio.h>
+	<iostream>
+	<sstream>
+	<math.h>
+
+1583503337 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\playlist.h
+	"Song.h"
+	<iostream>
+	<vector>
+	<string>
+
+1583503337 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\src\listener.cpp
+	"Listener.h"
+
+1583503337 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\listener.h
+	"User.h"
+
+1583503337 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\src\playlist.cpp
+	"Playlist.h"
+
+1583503337 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\src\song.cpp
+	"Song.h"
+
+1583503337 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\src\user.cpp
+	"User.h"
+
+1583544842 source:c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\main.cpp
+	<iostream>
+	<string>
+	"User.h"
+	"Playlist.h"
+	"Artist.h"
+	"Listener.h"
+	"Song.h"
+	"XtraFunky2.h"
+
+1583544448 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\xtrafunky2.h
+	<iostream>
+	<stdio.h>
+	"User.h"
+	"Song.h"
+	"Playlist.h"
+	"Artist.h"
+

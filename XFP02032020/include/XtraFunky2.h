@@ -41,11 +41,12 @@ __/\\\_______/\\\_____________________________________________/\\\\\\\\\\\\\\\__
 using namespace std;
 
 ///---------------------------------[ CUSTOM FUNCTIONS ]-----------------------------------
-int expandArray(int* Array,int CurrentArraySize,int NewArraySize);
+int* expandArray(int* Array,int CurrentArraySize,int NewArraySize);
+User* expandArray(User* Array,int CurrentArraySize,int NewArraySize);
 
 ///--------------------------------[ ALL THE BORING STUFF ]--------------------------------
 
-int expandArray(int* arPtr,int oldSize,int newSize)
+int* expandArray(int* arPtr,int oldSize,int newSize)
 {
     int lim = oldSize;
 
@@ -54,23 +55,33 @@ int expandArray(int* arPtr,int oldSize,int newSize)
         lim = newSize;
     }
 
-    int* temPtr = new int [oldSize];
-    for (int i =0;i<oldSize;i++)
+    int *tempAr;
+    tempAr = new int [newSize];
+
+    copy(arPtr, arPtr + oldSize, tempAr);
+    delete[] arPtr;
+    arPtr = tempAr;
+
+    return tempAr;
+}
+
+User* expandArray(User* arPtr,int oldSize,int newSize)
+{
+    int lim = oldSize;
+
+    if (newSize < lim)
     {
-        temPtr[i] = arPtr[i];
+        lim = newSize;
     }
 
-    arPtr = new int [newSize];
+    User *tempAr;
+    tempAr = new User [newSize];
 
-    for (int i =0;i<lim;i++)
-    {
-        arPtr[i] = temPtr[i];
-    }
+    copy(arPtr, arPtr + oldSize, tempAr);
+    delete[] arPtr;
+    arPtr = tempAr;
 
-    delete[] temPtr;
-    temPtr = nullptr;
-
-    return newSize;
+    return tempAr;
 }
 
 

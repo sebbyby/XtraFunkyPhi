@@ -56,8 +56,8 @@ int main()
     Playlist p1;
 
     int PPsize = 10;
-    int smallPP [PPsize] = {0,5,3,1,3,4,2,1,4,2};
-
+    int* smallPP;
+    smallPP = new int [PPsize];
     //p1.addSong(songVector.at(0));
     //p1.addSong(s1);
 
@@ -80,7 +80,7 @@ int main()
         cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
     }
     cout << "-----------------------------------------------------\n";
-    PPsize = expandArray(smallPP,10,12);
+    //PPsize = expandArray(smallPP,10,12);
 
     int bgPP [PPsize];
     cout << "BGPP ADDRESS: " << &bgPP << endl;
@@ -91,18 +91,47 @@ int main()
     }
 
     cout << "-----------------------------------------------------\n";
-    PPsize = expandArray(smallPP,12,100);
+    smallPP = expandArray(smallPP,10,100);
+    PPsize = 100;
     for (int i=0;i<PPsize;i++)
     {
         smallPP[i] = i;
         cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
     }
+    smallPP[34] = 234;
+    for (int i=0;i<PPsize;i++)
+    {
+
+        cout << "ADDRESS: " << &smallPP[i] << " VALUE: " << smallPP[i] << endl;
+    }
+
+
 
 
     cout << endl << "New array size = " << PPsize << endl;
-    cout << endl;
+    cout << "jhohiuhiuhi" <<endl;
 
 
+    User* yssir;
+    yssir = new User[100];
+    while (true)
+    {
+    yssir = expandArray(yssir,100,1000);
+    PPsize = 1000;
+    for (int i=0;i<PPsize;i++)
+    {
+
+        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << 423423 << endl;
+    }
+    yssir = expandArray(yssir,1000,100);
+    PPsize = 100;
+    for (int i=0;i<PPsize;i++)
+    {
+
+        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << 2342423 << endl;
+    }
+
+    }
 
     return 0;
 }
