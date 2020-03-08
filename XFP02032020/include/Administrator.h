@@ -1,15 +1,12 @@
 #ifndef ADMINISTRATOR_H
 #define ADMINISTRATOR_H
-#include "User.h"
 
 
-class Administrator : public User
+class Administrator
 {
     public:
         Administrator();
         virtual ~Administrator();
-
-        void deleteUsers();
 
     protected:
 
