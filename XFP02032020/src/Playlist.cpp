@@ -15,9 +15,9 @@ Playlist::~Playlist()
     //dtor
 }
 
-void Playlist::addSong(Song &s)
+void Playlist::addSong(Song s)
 {
-    playlistVector.push_back(&s);
+    playlistVector.push_back(s);
 }
 
 void Playlist::spacer()
@@ -38,7 +38,7 @@ void Playlist::displayPlaylist()
     spacer();
     for (int i = 0; i < playlistVector.size(); i++)
     {
-        playlistVector.at(i)->display();
+        playlistVector.at(i).display();
     }
     spacer();
 }

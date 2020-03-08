@@ -10,7 +10,7 @@ class Playlist
 {
     public:
 
-        void addSong(Song&);
+        void addSong(Song);
         void spacer();
         void displayPlaylist();
 
@@ -24,7 +24,7 @@ class Playlist
     protected:
     private:
         string playlistName;
-        vector<Song*> playlistVector;
+        vector<Song> playlistVector;
 };
 
 #endif // PLAYLIST_H
