@@ -29,6 +29,7 @@ class Song
         string formTime();
         void display();
         void displayDetailed();
+
     protected:
     private:
         const int duration = 0;
