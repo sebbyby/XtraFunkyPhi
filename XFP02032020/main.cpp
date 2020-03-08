@@ -7,14 +7,14 @@
 #include "Listener.h"
 #include "Song.h"
 
-/// -----------------------------------------------------
+/// ------------[ yea we are going there ]--------------------------
                 # include "XtraFunky2.h"
-/// -----------------------------------------------------
+/// ----------------------------------------------------------------
 using namespace std;
 
 int main()
 {
-    static const int maxUsers = 1000,
+    /*static const*/ int maxUsers = 1000,
                      maxArtists = 1000,
                      maxSongs = 1000,
                      maxPlaylists = 1000;
@@ -26,10 +26,17 @@ int main()
     vector<Song> songVector;
     */
 
+    /* Still not complicated enough
     User *userArray[maxUsers];
     Artist *artistArray[maxArtists];
     Playlist *playlistArray[maxPlaylists];
-    Song *songArray[maxSongs];
+    Song *songArray[maxSongs]; */
+
+    /// Why do i do this
+    User *userArray = new User[maxUsers];
+    Artist *artistArray = new Artist[maxArtists];
+    Playlist*playlistArray = new Playlist[maxPlaylists];
+    Song *songArray = new Song[maxSongs];
 
     int noUsers = 0,
         noArtists = 0,
@@ -114,24 +121,35 @@ int main()
 
     User* yssir;
     yssir = new User[100];
-    while (true)
+    for (int i=0;i<100;i++)
     {
+
+        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << i
+         << endl;
+    }
     yssir = expandArray(yssir,100,1000);
-    PPsize = 1000;
-    for (int i=0;i<PPsize;i++)
+    for (int i=0;i<1000;i++)
     {
 
-        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << 423423 << endl;
+        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << i << endl;
     }
-    yssir = expandArray(yssir,1000,100);
-    PPsize = 100;
-    for (int i=0;i<PPsize;i++)
+
+    User* tempUser = new User;
+    yssir[650] = *tempUser;
+    yssir[650].SetUserName("big joe");
+
+    yssir = expandArray(yssir,1000,1200);
+
+    for (int i=0;i<1200;i++)
     {
 
-        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << 2342423 << endl;
+        cout << "ADDRESS: " << &yssir[i] << " VALUE: " << i << endl;
     }
+    yssir[650].displayUser();
 
-    }
+    yssir = expandArray(yssir,1000,1200);
 
+    maxUsers = 1200;
+    /*userArray = */expandArray(userArray,1000,1200);
     return 0;
 }

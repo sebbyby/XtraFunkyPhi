@@ -58,7 +58,7 @@ int* expandArray(int* arPtr,int oldSize,int newSize)
     int *tempAr;
     tempAr = new int [newSize];
 
-    copy(arPtr, arPtr + oldSize, tempAr);
+    copy(arPtr, arPtr + lim, tempAr);
     delete[] arPtr;
     arPtr = tempAr;
 
@@ -77,7 +77,7 @@ User* expandArray(User* arPtr,int oldSize,int newSize)
     User *tempAr;
     tempAr = new User [newSize];
 
-    copy(arPtr, arPtr + oldSize, tempAr);
+    copy(arPtr, arPtr + lim, tempAr);
     delete[] arPtr;
     arPtr = tempAr;
 
