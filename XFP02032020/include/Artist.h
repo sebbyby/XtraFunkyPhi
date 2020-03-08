@@ -7,24 +7,27 @@
 class Artist : public User
 {
     public:
-        Artist(string n,Song &s);
+        Artist(string n);
         int noOfSongs;
 
         //vector<Song> artistVector;
 
         void displayArtist();
         void spacer();
+        void createSong(Song);
 
 
         Artist();
         virtual ~Artist();
+        void listSongs();
 
         int GetnoOfSongs() { return noOfSongs; }
         void SetnoOfSongs(int val) { noOfSongs = val; }
 
     protected:
     private:
-        Song *songVectorPtr;
+        vector <Song> songVector;
+
 
 
 };

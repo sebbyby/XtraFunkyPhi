@@ -11,16 +11,28 @@ Artist::~Artist()
     //dtor
 }
 
-Artist::Artist(string n,Song &s)
+Artist::Artist(string n)
 {
     User::UserName = "n";
-    Artist::songVectorPtr = &s;
 }
 
 /**void Artist::addArtistSong(Song)
 {
     artistVector.push_back(Song());
 }**/
+
+void Artist::createSong(Song s)
+{
+    songVector.push_back(s);
+}
+
+void Artist::listSongs()
+{
+    for (int i=0;i<songVector.size();i++)
+    {
+        songVector.at(i).display();
+    }
+}
 
 void Artist::spacer()
 {

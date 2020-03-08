@@ -31,6 +31,7 @@ class Song
         void displayDetailed();
 
     protected:
+
     private:
         const int duration = 0;
         int timesPlayed;

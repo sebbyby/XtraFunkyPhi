@@ -22,6 +22,7 @@ class Playlist
         void SetplaylistName(string val);
 
     protected:
+
     private:
         string playlistName;
         vector<Song> playlistVector;
