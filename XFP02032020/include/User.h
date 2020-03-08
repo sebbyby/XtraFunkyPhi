@@ -8,6 +8,8 @@ using namespace std;
 class User
 {
     public:
+        arrSize = 100;
+
         string UserName;
 
         void displayUser();
@@ -21,6 +23,7 @@ class User
         void SetUserName(string val);
     protected:
     private:
+        int * arr = new int[arrSize];
 };
 
 #endif // USER_H
