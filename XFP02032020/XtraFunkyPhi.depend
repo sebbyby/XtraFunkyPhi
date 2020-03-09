@@ -98,19 +98,20 @@
 1583177071 source:z:\software development\xfp02032020\src\playlist.cpp
 	"Playlist.h"
 
-1583245412 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\artist.cpp
+1583780101 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\artist.cpp
 	"Artist.h"
 
-1583245404 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\artist.h
+1583782477 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\artist.h
 	"User.h"
 	"Song.h"
 	"Playlist.h"
 
-1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\user.h
+1583782059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\user.h
 	<string>
 	<iostream>
+	"Song.h"
 
-1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\song.h
+1583782233 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\song.h
 	<vector>
 	<string>
 	<stdio.h>
@@ -118,7 +119,7 @@
 	<sstream>
 	<math.h>
 
-1583176952 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\playlist.h
+1583778163 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\playlist.h
 	"Song.h"
 	<iostream>
 	<vector>
@@ -130,24 +131,23 @@
 1583176059 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\listener.h
 	"User.h"
 
-1583177071 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\playlist.cpp
+1583780847 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\playlist.cpp
 	"Playlist.h"
 
-1583176060 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\song.cpp
+1583782477 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\song.cpp
 	"Song.h"
 
-1583245338 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\user.cpp
+1583784584 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\user.cpp
 	"User.h"
 
-1583330020 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\main.cpp
+1583784845 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\main.cpp
 	<iostream>
 	<string>
 	"User.h"
 	"Playlist.h"
 	"Artist.h"
-	"Listener.h"
 	"Song.h"
-	"XtraFunky2.h"
+	"Administrator.h"
 
 1583329248 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\xtrafunky2.h
 	<iostream>
@@ -220,4 +220,10 @@
 	"Administrator.h"
 
 1583694791 c:\users\rafal\documents\github\xtrafunkyphi\xfp02032020\include\administrator.h
+
+1583780454 source:z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\src\administrator.cpp
+	"Administrator.h"
+
+1583780454 z:\software development\ghdxfp\xtrafunkyphi\xfp02032020\include\administrator.h
+	"User.h"
 

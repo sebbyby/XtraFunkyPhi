@@ -1,16 +1,24 @@
 #ifndef ADMINISTRATOR_H
 #define ADMINISTRATOR_H
+#include "User.h"
 
 
-class Administrator
+class Administrator : public User   /// Inheritance Relationship
 {
     public:
-        Administrator();
-        virtual ~Administrator();
+        Administrator();    /// Administrator Constructor
+        virtual ~Administrator();   /// Administrator Destructor
+
+        Administrator(string n);   /// Overloaded Constructor
+
+        void displayUser();    /// Administrator Display function
+        void deleteUser(User *u);
 
     protected:
 
     private:
+
+
 };
 
 #endif // ADMINISTRATOR_H

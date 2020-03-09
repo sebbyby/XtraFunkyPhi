@@ -34,8 +34,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Administrator.h" />
 		<Unit filename="include/Artist.h" />
-		<Unit filename="include/Listener.h" />
 		<Unit filename="include/Playlist.h" />
 		<Unit filename="include/Song.h" />
 		<Unit filename="include/User.h" />
@@ -43,8 +43,8 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Administrator.cpp" />
 		<Unit filename="src/Artist.cpp" />
-		<Unit filename="src/Listener.cpp" />
 		<Unit filename="src/Playlist.cpp" />
 		<Unit filename="src/Song.cpp" />
 		<Unit filename="src/User.cpp" />

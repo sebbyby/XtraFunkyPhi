@@ -29,15 +29,17 @@ Song::Song(string n ,int d , string aN, string g):duration(d) /// o/d'd (ctor++)
     Song::genre = g;
 }
 
-void Song::Rate(float r)
+bool Song::Rate(float r)
 {
     if (r>=0&&r<=5) /// if rating is in range 0-5
     {
         Song::ratings.push_back(r); /// add rating to list
+        return true;
     }
     else /// otherwise display error
     {
         printf("Ratings in range 0-5\n");
+        return false;
     }
 }
 
@@ -89,7 +91,7 @@ void Song::displayDetailed() /// detailed info display
          << "]\nTimes played: "<< Song::timesPlayed << "\nRated " << r << "/5 by "<< rt << " people\n" ; /// cout info
 }
 
-Song::~Song()
+Song::~Song()   /// Song Destructor
 {
     //dtor
 }
